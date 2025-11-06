@@ -14,7 +14,7 @@
 
 ## ✨ Why Shiggy Manager?
 
-Shiggy Manager makes installing and managing Discord mods simple and safe. It's built from the ground up by Aliucord Team with reliability and UX in mind, and changed to work with new versions by Wintry Team:
+Shiggy Manager makes installing and managing ShiggyCord simple. The manager is built from the ground up by Aliucord Team with reliability and UX in mind, and changed to work with new versions by Wintry Team (pylix):
 - Clean, ShiggyCord-branded UI and icons
 - Safe vector handling to avoid runtime inflation issues
 - Fast install/update workflows
