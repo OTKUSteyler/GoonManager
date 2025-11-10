@@ -11,8 +11,8 @@ import com.aliucord.manager.patcher.steps.base.DownloadStep
 import com.aliucord.manager.patcher.steps.base.StepState
 import com.aliucord.manager.patcher.steps.prepare.FetchInfoStep
 import com.aliucord.manager.ui.components.dialogs.CustomComponentVersionPicker
-import dev.shiggy.manager.BuildConfig
-import dev.shiggy.manager.R
+import dev.goon.manager.BuildConfig
+import dev.goon.manager.R
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 
