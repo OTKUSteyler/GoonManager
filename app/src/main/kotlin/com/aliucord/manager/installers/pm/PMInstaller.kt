@@ -4,7 +4,7 @@ import android.app.Application
 import android.content.pm.PackageInstaller
 import android.content.pm.PackageManager
 import android.util.Log
-import dev.shiggy.manager.BuildConfig
+import dev.goon.manager.BuildConfig
 import com.aliucord.manager.installers.Installer
 import kotlinx.coroutines.suspendCancellableCoroutine
 import java.io.File
