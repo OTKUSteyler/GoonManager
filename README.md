@@ -1,23 +1,24 @@
-<h1 align="center">Shiggy Manager</h1>
+<h1 align="center">Goon Manager</h1>
 
 <p align="center">
-  <a href="https://github.com/kmmiio99o/ShiggyManager/releases"><img alt="Releases" src="https://img.shields.io/github/v/release/kmmiio99o/ShiggyManager?style=flat-square"></a>
+  <a href="https://github.com/OTKUSteyler/GoonManager/releases/"><img alt="Releases" src="https://img.shields.io/github/v/release/kmmiio99o/ShiggyManager?style=flat-square"></a>
   <a href="https://github.com/kmmiio99o/ShiggyManager/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-blue?style=flat-square"></a>
   <a href="https://github.com/kmmiio99o/ShiggyManager/issues"><img alt="Issues" src="https://img.shields.io/github/issues/kmmiio99o/ShiggyManager?style=flat-square"></a>
 </p>
 
 <p align="center">
-  A fast, friendly, and focused Android mod manager for Discord — rebranded for the ShiggyCord community from Wintry.
+  A fast, friendly, and focused Android mod manager for Discord — rebranded for the GoonCord community from Wintry.
 </p>
 
 ---
 
-## ✨ Why Shiggy Manager?
+## ✨ Why Goon Manager?
 
-Shiggy Manager makes installing and managing ShiggyCord simple. The manager is built from the ground up by Aliucord Team with reliability and UX in mind, and changed to work with new versions by Wintry Team (pylix):
-- Clean, ShiggyCord-branded UI and icons
+Goon Manager makes installing and managing Discord mods simple and safe. It's built from the ground up by Aliucord Team with reliability and UX in mind, and changed to work with new versions by Wintry Team:
+- Clean, GoonCord-branded UI and icons
 - Safe vector handling to avoid runtime inflation issues
 - Fast install/update workflows
+- forked by a lazy dev as an running joke mod
 
 ---
 
@@ -25,13 +26,13 @@ Shiggy Manager makes installing and managing ShiggyCord simple. The manager is b
 
 <p><strong>Download & run</strong> — get a released APK from Releases and install with:</p>
 
-Get newest apk from [release list](https://github.com/kmmiio99o/ShiggyManager/releases/) and install it.
+Get newest apk from [release list](https://github.com/OTKUSteyler/GoonManager/releases/tag/V1.0) and install it.
 
 <p><strong>Build from source</strong> — clone and assemble:</p>
 
-```ShiggyManager/README.md#L411-418
-git clone https://github.com/kmmiio99o/ShiggyManager.git
-cd ShiggyManager
+```GoonManager/README.md#L411-418
+git clone https://github.com/OTKUSteyler/GoonManager.git
+cd GoonManager
 ./gradlew :app:assembleDebug
 ```
 
@@ -53,16 +54,16 @@ APK output: `app/build/outputs/apk/debug/app-debug.apk`.
 You can fully tailor the appearance:
 
 - App name: edit `app/src/main/res/values/strings.xml` — ensure the UI uses `@string/app_name`.
-- Icons: swap `app/src/main/res/drawable/ic_rounded_shiggy.xml` and `app/src/main/res/drawable/ic_discord_aliucord.xml` with your vector or PNG.
+- Icons: swap `app/src/main/res/drawable/ic_rounded_shiggy.xml` and `ic_discord_shiggy.xml` with your vector or PNG.
 - Colors: use `colors.xml` to apply a new palette.
 - Glyph sizing: vector drawables support `<group android:scaleX="" android:scaleY="" android:translateX="" android:translateY="">`. To center an element after scaling, compute translation as:
 
-```ShiggyManager/README.md#L419-426
+```GoonManager/README.md#L419-426
 translate = (viewportSize - (viewportSize * scale)) / 2
 # Example for viewport 256 and scale 0.7 -> translate = 38.4
 ```
 
-If you see a missing space in the name (e.g., `ShiggyManager`), search for usages of `@string/shiggy` — that key intentionally contains the compact brand name. Prefer `@string/app_name` for UI labels that expect "Shiggy Manager".
+If you see a missing space in the name (e.g., `GoonManager`), search for usages of `@string/shiggy` — that key intentionally contains the compact brand name. Prefer `@string/app_name` for UI labels that expect "Goon Manager".
 
 ---
 
@@ -81,7 +82,7 @@ We love contributions! Here's how to help:
 
 1. Fork the repository.
 2. Create a branch:
-```ShiggyManager/README.md#L427-430
+```GoonManager/README.md#L427-430
 git checkout -b feat/my-cool-feature
 ```
 3. Make your changes, run tests and build:
@@ -111,7 +112,7 @@ We keep a concise changelog in the release notes. Please add meaningful entries 
 
 ## 🧾 License
 
-Shiggy Manager is open source under the OSL License. See `LICENSE` for details.
+Goon Manager is open source under the OSL License. See `LICENSE` for details.
 
 ---
 
@@ -124,5 +125,5 @@ Shiggy Manager is open source under the OSL License. See `LICENSE` for details.
 ---
 
 <p align="center">
-  <strong>Made with ❤️ for the ShiggyCord community — keep it playful, keep it safe.</strong>
+  <strong>Made with ❤️ for the GoonCord community — keep it playful, keep it safe.</strong>
 </p>
