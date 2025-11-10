@@ -41,7 +41,7 @@ import com.aliucord.manager.ui.screens.patchopts.PatchOptionsScreen
 import com.aliucord.manager.ui.util.ColorSaver
 import com.aliucord.manager.ui.util.throttledState
 import com.aliucord.manager.util.back
-import dev.shiggy.manager.R
+import dev.goon.manager.R
 import dev.zt64.compose.pipette.CircularColorPicker
 import dev.zt64.compose.pipette.HsvColor
 import kotlinx.parcelize.IgnoredOnParcel
