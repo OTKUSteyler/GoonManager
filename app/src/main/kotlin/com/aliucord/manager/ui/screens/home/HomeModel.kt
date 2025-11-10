@@ -24,8 +24,8 @@ import com.aliucord.manager.ui.util.DiscordVersion
 import com.aliucord.manager.ui.util.toUnsafeImmutable
 import com.aliucord.manager.util.*
 import com.github.diamondminer88.zip.ZipReader
-import dev.shiggy.manager.BuildConfig
-import dev.shiggy.manager.R
+import dev.goon.manager.BuildConfig
+import dev.goon.manager.R
 import kotlinx.coroutines.*
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
