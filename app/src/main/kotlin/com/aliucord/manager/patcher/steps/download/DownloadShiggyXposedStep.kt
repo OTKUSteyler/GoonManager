@@ -6,7 +6,7 @@ import com.aliucord.manager.network.utils.SemVer
 import com.aliucord.manager.network.utils.getOrThrow
 import com.aliucord.manager.patcher.StepRunner
 import com.aliucord.manager.patcher.steps.base.DownloadStep
-import dev.shiggy.manager.R
+import dev.goon.manager.R
 import org.koin.core.component.inject
 
 class DownloadShiggyXposedStep : DownloadStep() {
