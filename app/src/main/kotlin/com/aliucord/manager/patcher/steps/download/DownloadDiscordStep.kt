@@ -3,8 +3,8 @@ package com.aliucord.manager.patcher.steps.download
 import androidx.compose.runtime.Stable
 import com.aliucord.manager.manager.PathManager
 import com.aliucord.manager.patcher.steps.base.DownloadStep
-import dev.shiggy.manager.BuildConfig
-import dev.shiggy.manager.R
+import dev.goon.manager.BuildConfig
+import dev.goon.manager.R
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 
