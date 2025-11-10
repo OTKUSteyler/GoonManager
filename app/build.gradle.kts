@@ -19,7 +19,7 @@ val gitHasLocalCommits = gitCurrentBranch?.let { providers.execIgnoreCode("git",
 val gitHasHasLocalChanges = providers.execIgnoreCode("git", "status", "-s").isNotEmpty()
 
 android {
-    namespace = "dev.shiggy.manager"
+    namespace = "dev.goon.manager"
     compileSdk = 36
 
     defaultConfig {
