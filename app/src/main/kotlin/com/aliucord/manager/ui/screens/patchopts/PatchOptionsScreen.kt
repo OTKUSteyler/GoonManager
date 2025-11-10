@@ -32,7 +32,7 @@ import com.aliucord.manager.ui.screens.patchopts.components.PatchOptionsAppBar
 import com.aliucord.manager.ui.screens.patchopts.components.options.*
 import com.aliucord.manager.ui.util.*
 import com.aliucord.manager.util.*
-import dev.shiggy.manager.R
+import dev.goon.manager.R
 import kotlinx.coroutines.delay
 import kotlinx.parcelize.IgnoredOnParcel
 import kotlinx.parcelize.Parcelize
