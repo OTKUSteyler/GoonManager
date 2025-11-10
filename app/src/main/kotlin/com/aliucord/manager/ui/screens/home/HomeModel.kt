@@ -224,7 +224,11 @@ class HomeModel(
             },
             screenModelScope.launch(Dispatchers.IO) {
                 wtGithub.getLatestXposedRelease().fold(
-                    success = { latestShiggyXposedVersion = SemVer.parse(it.name) },
+                    success = {
+                        val versionName = it.name
+                        val truncatedVersion = versionName.split(".").take(3).joinToString(".")
+                        latestShiggyXposedVersion = SemVer.parse(truncatedVersion)
+                    },
                     fail = { Log.w(BuildConfig.TAG, "Failed to fetch latest ShiggyXposed version", it) },
                 )
             },

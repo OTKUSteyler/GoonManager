@@ -73,6 +73,10 @@ class PatchOptionsModel(
     var showNetworkWarningDialog by mutableStateOf(!alreadyShownNetworkWarning && isNetworkDangerous())
         private set
 
+    // Expose current installer option
+    val currentInstaller: com.aliucord.manager.manager.InstallerSetting
+        get() = prefs.installer
+
     fun hideNetworkWarning(neverShow: Boolean) {
         showNetworkWarningDialog = false
         alreadyShownNetworkWarning = true

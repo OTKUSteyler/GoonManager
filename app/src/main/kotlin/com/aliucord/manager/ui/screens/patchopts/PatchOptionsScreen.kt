@@ -73,7 +73,9 @@ class PatchOptionsScreen(
             )
         }
 
-        UnknownSourcesPermissionDialog()
+        if (model.currentInstaller == com.aliucord.manager.manager.InstallerSetting.PM) {
+            UnknownSourcesPermissionDialog()
+        }
 
         PatchOptionsScreenContent(
             isUpdate = prefilledOptions != null,
