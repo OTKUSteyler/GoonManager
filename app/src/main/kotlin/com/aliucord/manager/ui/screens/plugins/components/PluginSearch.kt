@@ -11,7 +11,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
 import com.aliucord.manager.ui.components.ResetToDefaultButton
-import dev.shiggy.manager.R
+import dev.goon.manager.R
 
 @Composable
 fun PluginSearch(
