@@ -10,7 +10,7 @@ import com.aliucord.manager.installers.InstallerResult
 import com.aliucord.manager.installers.pm.PMUtils
 import com.aliucord.manager.util.showToast
 import dev.rikka.tools.refine.Refine
-import dev.shiggy.manager.R
+import dev.goon.manager.R
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.suspendCancellableCoroutine
