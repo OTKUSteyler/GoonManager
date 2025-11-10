@@ -8,7 +8,7 @@ import com.aliucord.manager.patcher.util.ManifestPatcher
 import com.aliucord.manager.ui.screens.patchopts.PatchOptions
 import com.github.diamondminer88.zip.ZipReader
 import com.github.diamondminer88.zip.ZipWriter
-import dev.shiggy.manager.R
+import dev.goon.manager.R
 
 /**
  * Patch the APK's AndroidManifest.xml
