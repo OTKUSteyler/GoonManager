@@ -10,8 +10,8 @@ import cafe.adriel.voyager.core.model.ScreenModel
 import cafe.adriel.voyager.core.model.screenModelScope
 import com.aliucord.manager.ui.screens.patchopts.PatchOptions.IconReplacement
 import com.aliucord.manager.util.*
-import dev.shiggy.manager.BuildConfig
-import dev.shiggy.manager.R
+import dev.goon.manager.BuildConfig
+import dev.goon.manager.R
 import dev.zt64.compose.pipette.HsvColor
 import java.io.IOException
 
