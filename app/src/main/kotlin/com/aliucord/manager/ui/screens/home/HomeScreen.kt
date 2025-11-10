@@ -34,7 +34,7 @@ import com.aliucord.manager.ui.screens.plugins.PluginsScreen
 import com.aliucord.manager.ui.util.paddings.PaddingValuesSides
 import com.aliucord.manager.ui.util.paddings.exclude
 import com.aliucord.manager.util.*
-import dev.shiggy.manager.R
+import dev.goon.manager.R
 import kotlinx.parcelize.IgnoredOnParcel
 import kotlinx.parcelize.Parcelize
 
