@@ -26,7 +26,7 @@ Goon Manager makes installing and managing Discord mods simple and safe. It's bu
 
 <p><strong>Download & run</strong> — get a released APK from Releases and install with:</p>
 
-Get newest apk from [release list](https://github.com/OTKUSteyler/GoonManager/releases/tag/v1.1.0) and install it.
+Get newest apk from [release list](https://github.com/OTKUSteyler/GoonManager/releases/tag/v1.1.1) and install it.
 
 <p><strong>Build from source</strong> — clone and assemble:</p>
 
