@@ -11,8 +11,8 @@ import com.aliucord.manager.patcher.steps.base.*
 import com.aliucord.manager.patcher.steps.patch.ReorganizeDexStep
 import com.aliucord.manager.patcher.steps.prepare.FetchInfoStep
 import com.aliucord.manager.ui.components.dialogs.CustomComponentVersionPicker
-import dev.shiggy.manager.BuildConfig
-import dev.shiggy.manager.R
+import dev.goon.manager.BuildConfig
+import dev.goon.manager.R
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 
