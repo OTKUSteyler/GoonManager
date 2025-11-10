@@ -31,8 +31,8 @@ android {
             useSupportLibrary = true
         }
 
-        buildConfigField("String", "APPLICATION_NAME", "\"Shiggy Manager\"")
-        buildConfigField("String", "TAG", "\"ShiggyManager\"")
+        buildConfigField("String", "APPLICATION_NAME", "\"Goon Manager\"")
+        buildConfigField("String", "TAG", "\"GoonManager\"")
 
         buildConfigField("String", "GITHUB_ORG", "\"ShiggyCord\"")
         buildConfigField("String", "SUPPORT_SERVER", "\"\"")
