@@ -7,7 +7,7 @@ import android.util.Log
 import android.widget.Toast
 import com.aliucord.manager.installers.InstallerResult
 import com.aliucord.manager.installers.UnknownInstallerError
-import dev.shiggy.manager.BuildConfig
+import dev.goon.manager.BuildConfig
 
 /**
  * This class is used as a callback receiver for [PackageInstaller] events,
