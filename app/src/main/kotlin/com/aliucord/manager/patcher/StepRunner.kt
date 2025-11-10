@@ -9,8 +9,8 @@ import com.aliucord.manager.patcher.steps.StepGroup
 import com.aliucord.manager.patcher.steps.base.DownloadStep
 import com.aliucord.manager.patcher.steps.base.Step
 import com.aliucord.manager.ui.util.InstallNotifications
-import dev.shiggy.manager.BuildConfig
-import dev.shiggy.manager.R
+import dev.goon.manager.BuildConfig
+import dev.goon.manager.R
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.coroutines.delay
 import org.koin.core.component.KoinComponent
