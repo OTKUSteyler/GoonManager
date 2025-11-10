@@ -16,8 +16,8 @@ import com.aliucord.manager.network.services.ShiggyGithubService
 import com.aliucord.manager.network.utils.SemVer
 import com.aliucord.manager.network.utils.getOrThrow
 import com.aliucord.manager.util.*
-import dev.shiggy.manager.BuildConfig
-import dev.shiggy.manager.R
+import dev.goon.manager.BuildConfig
+import dev.goon.manager.R
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlin.system.exitProcess
