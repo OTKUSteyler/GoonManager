@@ -1,7 +1,7 @@
 package com.aliucord.manager.installers
 
 import android.content.Context
-import dev.shiggy.manager.R
+import dev.goon.manager.R
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
