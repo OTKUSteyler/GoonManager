@@ -3,7 +3,7 @@ package com.aliucord.manager.patcher.steps
 import android.os.Parcelable
 import androidx.annotation.StringRes
 import androidx.compose.runtime.Immutable
-import dev.shiggy.manager.R
+import dev.goon.manager.R
 import kotlinx.parcelize.Parcelize
 
 /**
