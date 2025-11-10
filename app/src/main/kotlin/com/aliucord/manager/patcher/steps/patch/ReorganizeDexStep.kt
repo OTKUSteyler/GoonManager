@@ -7,7 +7,7 @@ import com.aliucord.manager.patcher.steps.base.IDexProvider
 import com.aliucord.manager.patcher.steps.base.Step
 import com.aliucord.manager.patcher.steps.download.CopyDependenciesStep
 import com.github.diamondminer88.zip.*
-import dev.shiggy.manager.R
+import dev.goon.manager.R
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 
