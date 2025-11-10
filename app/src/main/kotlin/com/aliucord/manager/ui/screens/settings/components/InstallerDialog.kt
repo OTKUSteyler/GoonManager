@@ -15,7 +15,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.aliucord.manager.manager.InstallerSetting
 import com.aliucord.manager.manager.toDisplayName
-import dev.shiggy.manager.R
+import dev.goon.manager.R
 
 @Composable
 fun InstallerDialog(
