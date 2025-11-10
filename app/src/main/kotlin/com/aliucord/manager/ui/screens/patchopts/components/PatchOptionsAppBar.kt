@@ -7,7 +7,7 @@ import androidx.compose.ui.res.stringResource
 import cafe.adriel.voyager.navigator.LocalNavigator
 import com.aliucord.manager.ui.components.BackButton
 import com.aliucord.manager.ui.screens.settings.SettingsScreen
-import dev.shiggy.manager.R
+import dev.goon.manager.R
 
 @Composable
 fun PatchOptionsAppBar(
