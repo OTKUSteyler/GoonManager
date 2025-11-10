@@ -6,7 +6,7 @@ import com.aliucord.manager.patcher.steps.base.Step
 import com.aliucord.manager.patcher.steps.download.CopyDependenciesStep
 import com.aliucord.manager.patcher.steps.download.DownloadShiggyXposedStep
 import com.aliucord.manager.patcher.util.Signer
-import dev.shiggy.manager.R
+import dev.goon.manager.R
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.lsposed.lspatch.share.LSPConfig
