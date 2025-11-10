@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-  <string name="app_name">Shiggy Manager</string>
+  <string name="app_name">Goon Manager</string>
   <string name="app_description">A Discord mod built with simplicity and a seamless experience in mind.</string>
 
   <string name="aliucord" translatable="false">Aliucord</string>
@@ -8,7 +8,7 @@
   <string name="support_server">Support Server</string>
   <string name="installer">Installer</string>
 
-  <string name="shiggy" translatable="false">Shiggy Manager</string>
+  <string name="shiggy" translatable="false">Goon Manager</string>
   <string name="aliucord_description">A mod for the Discord Android App</string>
 
   <string name="action_cancel">Cancel</string>
@@ -40,11 +40,11 @@
   <string name="action_reinstall">Reinstall</string>
 
   <string name="permissions_grant_title">Grant Permissions</string>
-  <string name="storage_permissions_grant_body">In order for Shiggy Manager to function, file permissions are required.</string>
-  <string name="install_permissions_grant_body">Installing Shiggy requires granting permissions to install apps from unknown sources.</string>
+  <string name="storage_permissions_grant_body">In order for Goon Manager to function, file permissions are required.</string>
+  <string name="install_permissions_grant_body">Installing Goon requires granting permissions to install apps from unknown sources.</string>
 
   <string name="installs_no_installs">No installations found!</string>
-  <string name="launch_aliucord_fail">Failed to launch Shiggy</string>
+  <string name="launch_aliucord_fail">Failed to launch Goon</string>
 
   <string name="settings_header_advanced">Advanced</string>
   <string name="settings_header_appearance">Appearance</string>
@@ -54,7 +54,7 @@
   <string name="setting_dynamic_color">Dynamic color</string>
   <string name="setting_dynamic_color_desc">Enables Material You theming on Android 12+</string>
   <string name="setting_installer">Installer</string>
-  <string name="setting_installer_desc">The method to use for installing Shiggy</string>
+  <string name="setting_installer_desc">The method to use for installing Goon</string>
   <string name="setting_developer_options">Developer options</string>
   <string name="setting_developer_options_desc">Don\'t enable this unless you know what it does! (yes, really)</string>
   <string name="setting_keep_patched_apks">Keep patched APKs</string>
@@ -67,7 +67,7 @@
 
   <string
     name="about_manager_credit_disclaimer_notice"
-  >This manager is a fork of the original Aliucord Manager project, Which was a forked by wintry, and now rebranded as Shiggy Manager. Credit to the original project\'s maintainers for the foundational work; continued development and branding are by the Shiggy team.</string>
+  >This manager is a fork of the original Aliucord Manager project, Which was a forked by wintry, and now rebranded as Goon Manager. Credit to the original project\'s maintainers for the foundational work; continued development and branding are by the Shiggy team.</string>
 
   <string name="theme_system">System</string>
   <string name="theme_dark">Dark</string>
@@ -89,7 +89,7 @@
 
   <string name="contributors_lead">Lead Developers</string>
   <string name="lead_role_kettu">Kettu - Creator</string>
-  <string name="lead_role_shiggycord">ShiggyCord - Creator</string>
+  <string name="lead_role_shiggycord">GoonCord - Creator</string>
   <string name="lead_role_bunny">Bunny - Creator</string>
   <string name="role_creator_vendetta">Creator of Vendetta</string>
   <string name="role_original_manager_creator">Original Manager Creator</string>
@@ -114,20 +114,20 @@
 
   <string name="installer_file_save_success">Saved to %s</string>
   <string name="installer_file_save_failed">Failed to save %s</string>
-  <string name="installer_install_success">Successfully installed Shiggy</string>
-  <string name="installer_install_aborted">Cancelled Shiggy installation</string>
-  <string name="installer_uninstall_new">Please uninstall your current version of Shiggy in order to continue!</string>
-  <string name="installer_uninstall_success">Successfully uninstalled Shiggy</string>
+  <string name="installer_install_success">Successfully installed Goon</string>
+  <string name="installer_install_aborted">Cancelled Goon installation</string>
+  <string name="installer_uninstall_new">Please uninstall your current version of Goon in order to continue!</string>
+  <string name="installer_uninstall_success">Successfully uninstalled Goon</string>
   <string name="installer_uninstall_aborted">Cancelled uninstallation</string>
   <string name="installer_dl_verify_fail">Failed to verify download</string>
   <string name="installer_insufficient_storage">Insufficient storage space!</string>
   <string
     name="installer_banner_minimization"
   >Since battery optimizations have not been disabled, minimizing this screen may abort the installation process!</string>
-  <string name="installer_banner_failure">Installation failed! You can either retry or click this banner to open the Shiggy server for help.</string>
+  <string name="installer_banner_failure">Installation failed! You can either retry or click this banner to open the Goon server for help.</string>
   <string
     name="installer_banner_success"
-  >Successfully installed Shiggy! Do *NOT* uninstall the manager (this app) as it is required to perform certain types of updates.</string>
+  >Successfully installed Goon! Do *NOT* uninstall the manager (this app) as it is required to perform certain types of updates.</string>
 
   <string name="install_error_unknown">Installer failure (Unknown reason)</string>
   <string name="install_error_blocked">Installation was blocked</string>
@@ -148,14 +148,14 @@
   <string name="patch_step_restore_cache">Restoring from cache</string>
   <string name="patch_step_dl_kt_apk">Downloading Discord APK</string>
   <string name="patch_step_dl_kotlin">Downloading Kotlin library</string>
-  <string name="patch_step_dl_injector">Downloading ShiggyCord Injector</string>
-  <string name="patch_step_dl_aliuhook">Downloading ShiggyHook library</string>
+  <string name="patch_step_dl_injector">Downloading GoonCord Injector</string>
+  <string name="patch_step_dl_aliuhook">Downloading GoonHook library</string>
   <string name="patch_step_dl_smali">Downloading smali patches</string>
   <string name="patch_step_copy_deps">Copying dependencies</string>
   <string name="patch_step_patch_manifests">Patching APK manifest</string>
   <string name="patch_step_patch_icon">Patching app icon</string>
-  <string name="patch_step_add_injector">Adding ShiggyCord injector</string>
-  <string name="patch_step_add_aliuhook">Adding ShiggyHook library</string>
+  <string name="patch_step_add_injector">Adding GoonCord injector</string>
+  <string name="patch_step_add_aliuhook">Adding GoonHook library</string>
   <string name="patch_step_patch_smali">Applying smali patches</string>
   <string name="patch_step_reorganize_dex">Adding .dex files to APK</string>
   <string name="patch_step_save_metadata">Store metadata</string>
@@ -168,8 +168,8 @@
   <string name="patch_step_dl_libapk">Downloading libs apk</string>
   <string name="patch_step_dl_langapk">Downloading lang apk</string>
   <string name="patch_step_dl_resapk">Downloading resources apk</string>
-  <string name="patch_step_inject_shiggy">Injecting ShiggyXposed with LSPatch</string>
-  <string name="patch_step_dl_wtxposed">Downloading ShiggyXposed</string>
+  <string name="patch_step_inject_shiggy">Injecting GoonXposed with LSPatch</string>
+  <string name="patch_step_dl_wtxposed">Downloading GoonXposed</string>
 
   <string name="status_queued">Queued</string>
   <string name="status_ongoing">Ongoing</string>
@@ -182,7 +182,7 @@
 
   <string
     name="updater_body"
-  >A new update has been released for Shiggy Manager! It may be required in order to function properly. Would you like to update?</string>
+  >A new update has been released for Goon Manager! It may be required in order to function properly. Would you like to update?</string>
   <string name="updater_title">Update to v%s</string>
   <string name="updater_check_fail">Failed to check for updates!</string>
   <string name="updater_update_fail">Failed to update! Please download and install the update manually!</string>
@@ -201,7 +201,7 @@
   <string name="patchopts_pkgname_title">Package Name</string>
   <string
     name="patchopts_pkgname_desc"
-  >The package name is a unique identifier for all apps. Using different ones can allow for multiple installations of Shiggy.</string>
+  >The package name is a unique identifier for all apps. Using different ones can allow for multiple installations of Goon.</string>
   <string name="patchopts_pkgname_invalid">Invalid package name!</string>
   <string name="patchopts_pkgname_taken">Target app will be overwritten!</string>
   <string name="patchopts_pkgname_ok">Valid package name!</string>
@@ -212,7 +212,7 @@
   <string name="patchopts_debuggable_title">Debuggable</string>
   <string name="patchopts_debuggable_desc">Enable the debuggable manifest flag. Only use this if you know what you are doing!</string>
   <string name="patchopts_icon_title">Replace app icon</string>
-  <string name="patchopts_icon_desc">Change the app\'s icon to Shiggy\'s icon (or a custom one) instead of Discord\'s.</string>
+  <string name="patchopts_icon_desc">Change the app\'s icon to Goon\'s icon (or a custom one) instead of Discord\'s.</string>
   <string name="patchopts_divider_basic">Basic</string>
   <string name="patchopts_divider_advanced">Advanced</string>
   <string name="patchopts_warning_invalid_iconopts">The selected icon options are invalid!</string>
@@ -227,8 +227,8 @@
   <string name="iconopts_variant_title_color">Custom Color</string>
   <string name="iconopts_variant_title_image">Custom Image</string>
   <string name="iconopts_variant_desc_discord">Does not alter the original icon, instead only adding the missing monochrome icon to the APK.</string>
-  <string name="iconopts_variant_desc_aliucord">Changes the original icon color to Shiggy\'s branding.</string>
-  <string name="iconopts_variant_desc_shiggy">Changes the original icon color to Shiggy\'s branding.</string>
+  <string name="iconopts_variant_desc_aliucord">Changes the original icon color to Goon\'s branding.</string>
+  <string name="iconopts_variant_desc_shiggy">Changes the original icon color to Goon\'s branding.</string>
   <string name="iconopts_variant_desc_color">Select a custom icon background color.</string>
   <string
     name="iconopts_variant_desc_image"
@@ -270,9 +270,9 @@
 
   <string name="notif_group_install_title">Active installation</string>
   <string name="notif_group_install_desc">Progress notifications sent during a minimized installation</string>
-  <string name="notif_install_ready_title">Shiggy installation ready!</string>
+  <string name="notif_install_ready_title">Goon installation ready!</string>
   <string name="notif_install_ready_desc">Click to install...</string>
-  <string name="notif_install_fail_title">Shiggy failed to install</string>
+  <string name="notif_install_fail_title">Goon failed to install</string>
   <string name="notif_install_fail_desc">Click to view more info...</string>
 
   <string name="play_protect_warning_title">Play Protect</string>
@@ -301,5 +301,6 @@
   <string name="fun_fact_10">The Main Developer one and half a year ago didn\'t even know how to code</string>
   <string name="fun_fact_11">This client does not support iOS!</string>
   <string name="fun_fact_12">Boom!</string>
+  <string name="fun_fact_13">This client is not same as CumCord i made it as an Joke</string>
 
 </resources>
