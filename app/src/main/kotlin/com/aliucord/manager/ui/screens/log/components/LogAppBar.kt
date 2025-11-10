@@ -5,7 +5,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import com.aliucord.manager.ui.components.BackButton
-import dev.shiggy.manager.R
+import dev.goon.manager.R
 
 @Composable
 fun LogAppBar(
