@@ -14,7 +14,7 @@ import com.aliucord.manager.ui.screens.patchopts.PatchOptions
 import com.aliucord.manager.ui.util.InstallNotifications
 import com.aliucord.manager.util.isPackageInstalled
 import com.aliucord.manager.util.isPlayProtectEnabled
-import dev.shiggy.manager.R
+import dev.goon.manager.R
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 
