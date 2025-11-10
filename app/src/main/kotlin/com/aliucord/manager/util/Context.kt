@@ -13,8 +13,8 @@ import android.widget.Toast
 import androidx.annotation.AnyRes
 import androidx.annotation.StringRes
 import com.google.android.gms.safetynet.SafetyNet
-import dev.shiggy.manager.BuildConfig
-import dev.shiggy.manager.R
+import dev.goon.manager.BuildConfig
+import dev.goon.manager.R
 import java.io.File
 import java.io.InputStream
 import kotlin.coroutines.resume
