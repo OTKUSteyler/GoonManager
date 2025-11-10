@@ -10,8 +10,8 @@ import com.aliucord.manager.manager.PreferencesManager
 import com.aliucord.manager.manager.InstallerManager
 import com.aliucord.manager.ui.theme.Theme
 import com.aliucord.manager.util.*
-import dev.shiggy.manager.BuildConfig
-import dev.shiggy.manager.R
+import dev.goon.manager.BuildConfig
+import dev.goon.manager.R
 
 class SettingsModel(
     private val application: Application,
