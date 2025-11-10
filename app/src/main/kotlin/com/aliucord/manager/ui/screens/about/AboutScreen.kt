@@ -22,7 +22,7 @@ import cafe.adriel.voyager.koin.koinScreenModel
 import com.aliucord.manager.ui.components.*
 import com.aliucord.manager.ui.screens.about.components.LeadContributor
 import com.aliucord.manager.ui.util.paddings.*
-import dev.shiggy.manager.R
+import dev.goon.manager.R
 import kotlinx.parcelize.IgnoredOnParcel
 import kotlinx.parcelize.Parcelize
 
