@@ -7,7 +7,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import dev.shiggy.manager.R
+import dev.goon.manager.R
 
 @Composable
 fun RootDetectedDialog(
