@@ -8,7 +8,7 @@ import android.os.Bundle
 import android.util.Log
 import com.aliucord.manager.installers.shizuku.ShizukuInstallerError
 import com.aliucord.manager.installers.InstallerResult
-import dev.shiggy.manager.BuildConfig
+import dev.goon.manager.BuildConfig
 
 class ShizukuIntentReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
