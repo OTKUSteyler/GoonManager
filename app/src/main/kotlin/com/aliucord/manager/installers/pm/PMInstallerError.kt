@@ -4,7 +4,7 @@ import android.content.Context
 import android.content.pm.PackageInstaller
 import android.os.Parcelable
 import com.aliucord.manager.installers.InstallerResult
-import dev.shiggy.manager.R
+import dev.goon.manager.R
 import kotlinx.parcelize.Parcelize
 
 /**
