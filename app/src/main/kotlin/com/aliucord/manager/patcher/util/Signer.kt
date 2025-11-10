@@ -7,7 +7,7 @@ package com.aliucord.manager.patcher.util
 
 import com.aliucord.manager.manager.PathManager
 import com.android.apksig.ApkSigner
-import dev.shiggy.manager.BuildConfig
+import dev.goon.manager.BuildConfig
 import org.bouncycastle.asn1.x500.X500Name
 import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo
 import org.bouncycastle.cert.X509v3CertificateBuilder
