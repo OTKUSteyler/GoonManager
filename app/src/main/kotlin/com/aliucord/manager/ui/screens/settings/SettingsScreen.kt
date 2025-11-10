@@ -29,7 +29,7 @@ import com.aliucord.manager.ui.screens.settings.components.InstallerDialog
 import com.aliucord.manager.ui.screens.settings.components.ShizukuInfoDialog
 import com.aliucord.manager.manager.InstallerSetting
 import com.aliucord.manager.manager.toDisplayName
-import dev.shiggy.manager.R
+import dev.goon.manager.R
 import kotlinx.parcelize.IgnoredOnParcel
 import kotlinx.parcelize.Parcelize
 import android.content.pm.PackageManager
