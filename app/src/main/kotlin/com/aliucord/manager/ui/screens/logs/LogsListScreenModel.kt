@@ -8,7 +8,7 @@ import cafe.adriel.voyager.core.model.ScreenModel
 import cafe.adriel.voyager.core.model.screenModelScope
 import com.aliucord.manager.manager.InstallLogManager
 import com.aliucord.manager.util.*
-import dev.shiggy.manager.R
+import dev.goon.manager.R
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
 
