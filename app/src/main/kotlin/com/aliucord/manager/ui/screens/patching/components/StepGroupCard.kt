@@ -13,7 +13,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.aliucord.manager.patcher.steps.base.Step
 import com.aliucord.manager.patcher.steps.base.StepState
-import dev.shiggy.manager.R
+import dev.goon.manager.R
 import kotlinx.collections.immutable.ImmutableList
 
 @Composable
