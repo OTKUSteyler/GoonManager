@@ -17,7 +17,7 @@ import com.github.diamondminer88.zip.ZipReader
 import com.github.difflib.DiffUtils
 import com.github.difflib.UnifiedDiffUtils
 import com.github.difflib.patch.Patch
-import dev.shiggy.manager.R
+import dev.goon.manager.R
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 import java.io.FileNotFoundException
