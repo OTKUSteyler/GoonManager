@@ -21,7 +21,7 @@ import com.aliucord.manager.patcher.steps.base.StepState
 import com.aliucord.manager.ui.screens.logs.LogEntry
 import com.aliucord.manager.ui.screens.patching.components.StepStateIcon
 import com.aliucord.manager.ui.screens.patching.components.TimeElapsed
-import dev.shiggy.manager.R
+import dev.goon.manager.R
 
 @Composable
 fun LogEntryCard(
