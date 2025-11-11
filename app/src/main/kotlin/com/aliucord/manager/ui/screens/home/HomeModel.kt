@@ -146,27 +146,58 @@ class HomeModel(
         try {
             val packageManager = application.packageManager
             val aliucordInstallations = packages.mapNotNull { pkg ->
-                // `longVersionCode` is unnecessary since Discord doesn't use `versionCodeMajor`
-                @Suppress("DEPRECATION")
-                val versionCode = pkg.versionCode
-                val versionName = pkg.versionName ?: return@mapNotNull null
-                val applicationInfo = pkg.applicationInfo ?: return@mapNotNull null
+                try {
+                    @Suppress("DEPRECATION")
+                    val versionCode = pkg.versionCode
+                    val versionName = pkg.versionName ?: return@mapNotNull null
+                    val applicationInfo = pkg.applicationInfo ?: return@mapNotNull null
 
-                InstallData(
-                    name = packageManager.getApplicationLabel(applicationInfo).toString(),
-                    packageName = pkg.packageName,
-                    isUpToDate = isInstallationUpToDate(pkg),
-                    icon = packageManager
-                        .getApplicationIcon(applicationInfo)
-                        .toBitmap()
-                        .asImageBitmap()
-                        .let(::BitmapPainter),
-                    version = DiscordVersion.Existing(
-                        type = DiscordVersion.parseVersionType(versionCode),
-                        name = versionName.split("-")[0].trim(),
-                        code = versionCode,
-                    ),
-                )
+                    val name = try {
+                        packageManager.getApplicationLabel(applicationInfo).toString()
+                    } catch (e: Exception) {
+                        Log.w(BuildConfig.TAG, "Failed to get label for ${pkg.packageName}", e)
+                        null
+                    } ?: return@mapNotNull null
+
+                    val icon = try {
+                        packageManager.getApplicationIcon(applicationInfo)
+                            .toBitmap()
+                            .asImageBitmap()
+                            .let(::BitmapPainter)
+                    } catch (e: Exception) {
+                        Log.w(BuildConfig.TAG, "Failed to get icon for ${pkg.packageName}", e)
+                        null
+                    } ?: return@mapNotNull null
+
+                    // Defensive: check for any other possible nulls or bad data
+                    if (pkg.packageName.isNullOrEmpty()) {
+                        Log.w(BuildConfig.TAG, "Package name is null or empty for a package")
+                        return@mapNotNull null
+                    }
+
+                    InstallData(
+                        name = name,
+                        packageName = pkg.packageName,
+                        isUpToDate = try { isInstallationUpToDate(pkg) } catch (e: Exception) {
+                            Log.w(BuildConfig.TAG, "Failed to check up-to-date for ${pkg.packageName}", e)
+                            false
+                        },
+                        icon = icon,
+                        version = try {
+                            DiscordVersion.Existing(
+                                type = DiscordVersion.parseVersionType(versionCode),
+                                name = versionName.split("-")[0].trim(),
+                                code = versionCode,
+                            )
+                        } catch (e: Exception) {
+                            Log.w(BuildConfig.TAG, "Failed to parse version for ${pkg.packageName}", e)
+                            null
+                        } ?: return@mapNotNull null,
+                    )
+                } catch (e: Exception) {
+                    Log.w(BuildConfig.TAG, "Failed to process package ${pkg.packageName}", e)
+                    null
+                }
             }
 
             mainThread {
