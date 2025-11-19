@@ -2,6 +2,7 @@
  * Copyright (c) 2022 Juby210 & zt
  * Licensed under the Open Software License version 3.0
  */
+
 package com.aliucord.manager.ui.screens.about
 
 import android.os.Parcelable
@@ -21,7 +22,7 @@ import cafe.adriel.voyager.koin.koinScreenModel
 import com.aliucord.manager.ui.components.*
 import com.aliucord.manager.ui.screens.about.components.LeadContributor
 import com.aliucord.manager.ui.util.paddings.*
-import dev.goon.manager.R
+import dev.shiggy.manager.R
 import kotlinx.parcelize.IgnoredOnParcel
 import kotlinx.parcelize.Parcelize
 
@@ -94,25 +95,21 @@ fun AboutScreenContent(state: State<AboutScreenState>) {
                         text = stringResource(R.string.contributors_lead),
                         modifier = Modifier.padding(top = 18.dp, bottom = 20.dp),
                 )
-             item(key = "HEADER_DIVIDER") {
-    TextDivider(
-        text = stringResource(R.string.contributors_lead),
-        modifier = Modifier.padding(top = 18.dp, bottom = 20.dp),
-    )
+            }
 
-             item(key = "MAIN_CONTRIBUTORS") {
+            item(key = "MAIN_CONTRIBUTORS") {
                 Row(
-        horizontalArrangement = Arrangement.SpaceEvenly,
-        verticalAlignment = Alignment.CenterVertically,
-        modifier = Modifier.fillMaxWidth(),
-    ) {
-        LeadContributor("jonatanktk", stringResource(R.string.lead_role_shiggycord))
-        LeadContributor("OTKUSteyler", stringResource(R.string.lead_role_shiggycord))
-        LeadContributor("C0C0B01", stringResource(R.string.lead_role_kettu))
-        LeadContributor("kmmiio99o", stringResource(R.string.lead_role_shiggycord))
-        LeadContributor("pylixonly", stringResource(R.string.lead_role_bunny))
-    }
-}
+                        horizontalArrangement = Arrangement.SpaceEvenly,
+                        verticalAlignment = Alignment.CenterVertically,
+                        modifier = Modifier.fillMaxWidth(),
+                ) {
+                    LeadContributor("C0C0B01", stringResource(R.string.lead_role_kettu))
+                    LeadContributor("kmmiio99o", stringResource(R.string.lead_role_shiggycord))
+                    LeadContributor("jonatanktk", stringResource(R.string.lead_role_shiggycord))
+                    LeadContributor("OTKUSteyler", stringResource(R.string.lead_role_shiggycord))
+                    LeadContributor("pylixonly", stringResource(R.string.lead_role_bunny))
+                }
+            }
 
             item(key = "CONTRIBUTORS_DIVIDER") {
                 TextDivider(
@@ -150,3 +147,4 @@ fun AboutScreenContent(state: State<AboutScreenState>) {
             }
         }
     }
+}
