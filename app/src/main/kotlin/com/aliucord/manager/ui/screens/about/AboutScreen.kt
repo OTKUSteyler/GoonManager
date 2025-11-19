@@ -94,19 +94,25 @@ fun AboutScreenContent(state: State<AboutScreenState>) {
                         text = stringResource(R.string.contributors_lead),
                         modifier = Modifier.padding(top = 18.dp, bottom = 20.dp),
                 )
-            item(key = "MAIN_CONTRIBUTORS") {
+             item(key = "HEADER_DIVIDER") {
+    TextDivider(
+        text = stringResource(R.string.contributors_lead),
+        modifier = Modifier.padding(top = 18.dp, bottom = 20.dp),
+    )
+
+             item(key = "MAIN_CONTRIBUTORS") {
                 Row(
-                        horizontalArrangement = Arrangement.SpaceEvenly,
-                        verticalAlignment = Alignment.CenterVertically,
-                        modifier = Modifier.fillMaxWidth(),
-                ) {
-                    LeadContributor("jonatanktk", "random person"))
-                    LeadContributor("OTKUSteyler", "goon constantly"))
-                    LeadContributor("C0C0B01", stringResource(R.string.lead_role_kettu))
-                    LeadContributor("kmmiio99o", stringResource(R.string.lead_role_shiggycord))
-                    LeadContributor("pylixonly", stringResource(R.string.lead_role_bunny))
-                }
-            }
+        horizontalArrangement = Arrangement.SpaceEvenly,
+        verticalAlignment = Alignment.CenterVertically,
+        modifier = Modifier.fillMaxWidth(),
+    ) {
+        LeadContributor("jonatanktk", "random person")
+        LeadContributor("OTKUSteyler", "goon constantly")
+        LeadContributor("C0C0B01", stringResource(R.string.lead_role_kettu))
+        LeadContributor("kmmiio99o", stringResource(R.string.lead_role_shiggycord))
+        LeadContributor("pylixonly", stringResource(R.string.lead_role_bunny))
+    }
+}
 
             item(key = "CONTRIBUTORS_DIVIDER") {
                 TextDivider(
