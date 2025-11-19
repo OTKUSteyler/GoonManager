@@ -94,21 +94,6 @@ fun AboutScreenContent(state: State<AboutScreenState>) {
                         text = stringResource(R.string.contributors_lead),
                         modifier = Modifier.padding(top = 18.dp, bottom = 20.dp),
                 )
-:fire:
-Click to react
-:thumbsup:
-Click to react
-:sob:
-Click to react
-Translate
-View Raw (Left Click) / Copy Raw (Right Click)
-Add Reaction
-Reply
-Forward
-More
-[10:32 PM]Wednesday, November 19, 2025 at 10:32 PM
-}
-
             item(key = "MAIN_CONTRIBUTORS") {
                 Row(
                         horizontalArrangement = Arrangement.SpaceEvenly,
