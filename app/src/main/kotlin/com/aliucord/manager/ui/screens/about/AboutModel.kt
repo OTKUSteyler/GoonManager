@@ -27,6 +27,18 @@ class AboutModel(
         // who are not contributors to any particular repository.
         val staticContributors = persistentListOf(
             Contributor(
+                username = "jonatanktk",
+                avatarUrl = "https://github.com/jonatanktk.png",
+                commits = 0,
+                repositories = persistentListOf<com.aliucord.manager.network.models.Contributor.Repository>()
+            ),
+            Contributor(
+                username = "OTKUSteyler",
+                avatarUrl = "https://github.com/OTKUSteyler.png",
+                commits = 0,
+                repositories = persistentListOf<com.aliucord.manager.network.models.Contributor.Repository>()
+            ),
+            Contributor(
                 username = "rushiiMachine",
                 avatarUrl = "https://github.com/rushiiMachine.png",
                 commits = 0,
