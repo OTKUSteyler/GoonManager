@@ -144,4 +144,3 @@ fun AboutScreenContent(state: State<AboutScreenState>) {
             }
         }
     }
-}
