@@ -2,7 +2,6 @@
  * Copyright (c) 2022 Juby210 & zt
  * Licensed under the Open Software License version 3.0
  */
-
 package com.aliucord.manager.ui.screens.about
 
 import android.os.Parcelable
@@ -95,3 +94,69 @@ fun AboutScreenContent(state: State<AboutScreenState>) {
                         text = stringResource(R.string.contributors_lead),
                         modifier = Modifier.padding(top = 18.dp, bottom = 20.dp),
                 )
+:fire:
+Click to react
+:thumbsup:
+Click to react
+:sob:
+Click to react
+Translate
+View Raw (Left Click) / Copy Raw (Right Click)
+Add Reaction
+Reply
+Forward
+More
+[10:32 PM]Wednesday, November 19, 2025 at 10:32 PM
+}
+
+            item(key = "MAIN_CONTRIBUTORS") {
+                Row(
+                        horizontalArrangement = Arrangement.SpaceEvenly,
+                        verticalAlignment = Alignment.CenterVertically,
+                        modifier = Modifier.fillMaxWidth(),
+                ) {
+                    LeadContributor("jonatanktk", "random person")
+                    LeadContributor("OTKUSteyler", "goon constantly"))
+                    LeadContributor("C0C0B01", stringResource(R.string.lead_role_kettu))
+                    LeadContributor("kmmiio99o", stringResource(R.string.lead_role_shiggycord))
+                    LeadContributor("pylixonly", stringResource(R.string.lead_role_bunny))
+                }
+            }
+
+            item(key = "CONTRIBUTORS_DIVIDER") {
+                TextDivider(
+                        text = stringResource(R.string.contributors),
+                        modifier = Modifier.padding(top = 16.dp, bottom = 6.dp)
+                )
+            }
+
+            when (val state = state.value) {
+                AboutScreenState.Loading ->
+                        item(key = "CONTRIBUTIONS_LOADING") {
+                            Box(
+                                    contentAlignment = Alignment.Center,
+                                    content = { CircularProgressIndicator() },
+                                    modifier = Modifier.fillMaxWidth().padding(vertical = 38.dp),
+                            )
+                        }
+                AboutScreenState.Failure ->
+                        item(key = "LOAD_FAILURE") {
+                            LoadFailure(modifier = Modifier.fillMaxSize().padding(vertical = 38.dp))
+                        }
+                is AboutScreenState.Loaded -> {
+                    // Render the two requested contributors as LeadContributor entries
+                    item(key = "SELECTED_CONTRIBUTORS") {
+                        Row(
+                                horizontalArrangement = Arrangement.SpaceEvenly,
+                                verticalAlignment = Alignment.CenterVertically,
+                                modifier = Modifier.fillMaxWidth(),
+                        ) {
+                            LeadContributor("maisymoe", "Creator - Vendetta")
+                            LeadContributor("rushiiMachine", "Manager - Creator")
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
