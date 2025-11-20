@@ -106,8 +106,8 @@ fun AboutScreenContent(state: State<AboutScreenState>) {
                     LeadContributor("C0C0B01", stringResource(R.string.lead_role_kettu))
                     LeadContributor("kmmiio99o", stringResource(R.string.lead_role_shiggycord))
                     LeadContributor("pylixonly", stringResource(R.string.lead_role_bunny))
-                    LeadContributor("OTKUSteyler", stringResource(R.string.lead_role_bunny))
-                    LeadContributor("jonatanktk", stringResource(R.string.lead_role_bunny))
+                    LeadContributor("OTKUSteyler", stringResource(R.string.lead_role_shiggycord))
+            
                 }
             }
 
@@ -141,6 +141,7 @@ fun AboutScreenContent(state: State<AboutScreenState>) {
                         ) {
                             LeadContributor("maisymoe", "Creator - Vendetta")
                             LeadContributor("rushiiMachine", "Manager - Creator")
+                            LeadContributor("jonatanktk", "Shiggy Enjoyer"))
                         }
                     }
                 }
