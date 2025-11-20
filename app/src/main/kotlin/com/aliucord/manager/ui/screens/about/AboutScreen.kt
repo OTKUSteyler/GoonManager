@@ -107,7 +107,8 @@ fun AboutScreenContent(state: State<AboutScreenState>) {
                     LeadContributor("kmmiio99o", stringResource(R.string.lead_role_shiggycord))
                     LeadContributor("pylixonly", stringResource(R.string.lead_role_bunny))
                     LeadContributor("OTKUSteyler", stringResource(R.string.lead_role_shiggycord))
-            
+                    LeadContributor("jonatanktk", stringResource(R.string.lead_role_shiggycord))
+                    
                 }
             }
 
