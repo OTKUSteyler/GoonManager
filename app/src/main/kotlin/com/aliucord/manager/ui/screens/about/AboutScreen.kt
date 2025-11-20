@@ -142,7 +142,7 @@ fun AboutScreenContent(state: State<AboutScreenState>) {
                         ) {
                             LeadContributor("maisymoe", "Creator - Vendetta")
                             LeadContributor("rushiiMachine", "Manager - Creator")
-                            LeadContributor("jonatanktk", "Shiggy Enjoyer"))
+                        
                         }
                     }
                 }
