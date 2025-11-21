@@ -26,7 +26,6 @@ fun InstalledItemCard(
     onUpdate: () -> Unit,
     onOpenApp: () -> Unit,
     onOpenInfo: () -> Unit,
-    onOpenPlugins: () -> Unit,
     onUninstall: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
@@ -89,13 +88,6 @@ fun InstalledItemCard(
                 horizontalArrangement = Arrangement.spacedBy(2.dp),
                 modifier = Modifier.clip(MaterialTheme.shapes.large),
             ) {
-                // // Plugins cannot be managed externally yet in Shiggy
-                // SegmentedButton(
-                //     icon = painterResource(R.drawable.ic_extension),
-                //     text = stringResource(R.string.plugins_title),
-                //     onClick = onOpenPlugins,
-                // )
-
                 // If the up-to-date status cannot be determined, assume it is up-to-date
                 if (data.isUpToDate != false)
                     SegmentedButton(
@@ -126,7 +118,7 @@ fun InstalledItemCard(
                 )
                 SegmentedButton(
                     icon = painterResource(R.drawable.ic_delete_forever),
-                    text = stringResource(R.string.action_uninstall), // Assuming R.string.action_uninstall exists or will be added
+                    text = stringResource(R.string.action_uninstall),
                     iconColor = MaterialTheme.colorScheme.error,
                     textColor = MaterialTheme.colorScheme.error,
                     onClick = onUninstall,
