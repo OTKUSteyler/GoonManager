@@ -30,7 +30,6 @@ import com.aliucord.manager.ui.components.LoadFailure
 import com.aliucord.manager.ui.components.ProjectHeader
 import com.aliucord.manager.ui.screens.home.components.*
 import com.aliucord.manager.ui.screens.patchopts.PatchOptionsScreen
-import com.aliucord.manager.ui.screens.plugins.PluginsScreen
 import com.aliucord.manager.ui.util.paddings.PaddingValuesSides
 import com.aliucord.manager.ui.util.paddings.exclude
 import com.aliucord.manager.util.*
@@ -78,7 +77,6 @@ class HomeScreen : Screen, Parcelable {
                     },
                     onOpenApp = model::openApp,
                     onOpenAppInfo = model::openAppInfo,
-                    onOpenPlugins = { navigator.push(PluginsScreen()) }, // TODO: install-specific plugins
                     onUninstall = model::uninstallApp,
                 )
 
@@ -129,7 +127,6 @@ fun HomeScreenLoadedContent(
     onUpdate: (packageName: String) -> Unit,
     onOpenApp: (packageName: String) -> Unit,
     onOpenAppInfo: (packageName: String) -> Unit,
-    onOpenPlugins: (packageName: String) -> Unit,
     onUninstall: (packageName: String) -> Unit,
 ) {
     LazyColumn(
@@ -163,7 +160,6 @@ fun HomeScreenLoadedContent(
                 onUpdate = { onUpdate(item.packageName) },
                 onOpenApp = { onOpenApp(item.packageName) },
                 onOpenInfo = { onOpenAppInfo(item.packageName) },
-                onOpenPlugins = { onOpenPlugins(item.packageName) },
                 onUninstall = { onUninstall(item.packageName) },
                 modifier = Modifier.fillMaxWidth()
             )
