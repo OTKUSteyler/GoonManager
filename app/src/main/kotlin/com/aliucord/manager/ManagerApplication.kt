@@ -17,7 +17,7 @@ import com.aliucord.manager.ui.screens.log.LogScreenModel
 import com.aliucord.manager.ui.screens.logs.LogsListScreenModel
 import com.aliucord.manager.ui.screens.patching.PatchingScreenModel
 import com.aliucord.manager.ui.screens.patchopts.PatchOptionsModel
-import com.aliucord.manager.ui.screens.plugins.PluginsModel
+
 import com.aliucord.manager.ui.screens.settings.SettingsModel
 import com.aliucord.manager.ui.widgets.updater.UpdaterViewModel
 import com.aliucord.manager.installers.root.RootInstaller
@@ -57,7 +57,7 @@ class ManagerApplication : Application() {
             // UI Models
             modules(module {
                 factory { HomeModel(get<Application>(), get<AliucordGithubService>(), get<AliucordMavenService>(), get<ShiggyGithubService>(), get<RNATrackerService>(), get<kotlinx.serialization.json.Json>(), get<com.aliucord.manager.manager.PreferencesManager>()) }
-                factoryOf(::PluginsModel)
+
                 factoryOf(::AboutModel)
                 factoryOf(::PatchingScreenModel)
                 factory { SettingsModel(get<Application>(), get<PathManager>(), get<PreferencesManager>(), get<InstallerManager>()) }
