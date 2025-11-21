@@ -12,26 +12,10 @@ class PathManager(
     private val context: Context,
 ) {
     /**
-     * The Aliucord folder in which plugins/settings/themes are stored.
-     * Standard path: `~/Aliucord`
-     */
-    val aliucordDir = Environment.getExternalStorageDirectory().resolve("Aliucord")
-
-    /**
      * The Shiggy folder where shared Shiggy files are stored.
      * Standard path: `~/Shiggy`
      */
     val shiggyDir = Environment.getExternalStorageDirectory().resolve("Shiggy")
-
-    /**
-     * The directory in external storage in which plugins are stored by Aliucord.
-     */
-    val pluginsDir = aliucordDir.resolve("plugins")
-
-    /**
-     * The settings file in which Aliucord's core uses.
-     */
-    val coreSettingsFile = aliucordDir.resolve("settings/Aliucord.json")
 
     /**
      * Global keystore used for signing APKs.
