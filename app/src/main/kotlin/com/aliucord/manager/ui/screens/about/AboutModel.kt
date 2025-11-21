@@ -26,34 +26,44 @@ class AboutModel(
                 repositories = emptyList(),
                 role = "ShiggyCord - Creator"
             ),
-            Developer(
-                username = "C0C0B01",
-                avatarUrl = "https://github.com/C0C0B01.png",
+          Contributor(
+                username = "jonatanktk",
+                avatarUrl = "https://github.com/jonatanktk.png",
                 commits = 0,
-                repositories = emptyList(),
-                role = "Kettu - Creator"
+                repositories = persistentListOf<com.aliucord.manager.network.models.Contributor.Repository>()
             ),
-            Developer(
-                username = "pylixonly",
-                avatarUrl = "https://github.com/pylixonly.png",
+            Contributor(
+                username = "OTKUSteyler",
+                avatarUrl = "https://github.com/OTKUSteyler.png",
                 commits = 0,
-                repositories = emptyList(),
-                role = "Bunny - Creator"
+                repositories = persistentListOf<com.aliucord.manager.network.models.Contributor.Repository>()
             ),
-            Developer(
-                username = "maisymoe",
-                avatarUrl = "https://github.com/maisymoe.png",
-                commits = 0,
-                repositories = emptyList(),
-                role = "Creator - Vendetta"
-            ),
-            Developer(
+            Contributor(
                 username = "rushiiMachine",
                 avatarUrl = "https://github.com/rushiiMachine.png",
                 commits = 0,
-                repositories = emptyList(),
-                role = "Manager - Creator"
+                repositories = persistentListOf<com.aliucord.manager.network.models.Contributor.Repository>()
+            ),
+            Contributor(
+                username = "maisymoe",
+                avatarUrl = "https://github.com/maisymoe.png",
+                commits = 0,
+                repositories = persistentListOf<com.aliucord.manager.network.models.Contributor.Repository>()
+            ),
+            Contributor(
+                username = "kmmiio99o",
+                avatarUrl = "https://github.com/kmmiio99o.png",
+                commits = 0,
+                repositories = persistentListOf<com.aliucord.manager.network.models.Contributor.Repository>()
+            ),
+            Contributor(
+                username = "pylixonly",
+                avatarUrl = "https://github.com/pylixonly.png",
+                commits = 0,
+                repositories = persistentListOf<com.aliucord.manager.network.models.Contributor.Repository>()
             )
+        )
+        
         )
 
         mutableState.value = AboutScreenState.Loaded(allDevelopers.toUnsafeImmutable())
