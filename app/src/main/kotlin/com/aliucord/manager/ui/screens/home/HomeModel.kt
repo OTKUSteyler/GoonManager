@@ -122,7 +122,7 @@ class HomeModel(
         val metadata = try {
             val applicationInfo = application.packageManager.getApplicationInfo(packageName, 0)
             val metadataFile = ZipReader(applicationInfo.publicSourceDir)
-                .use { it.openEntry("shiggy.json")?.read() }
+                .use { it.openEntry("goon.json")?.read() }
 
             @OptIn(ExperimentalSerializationApi::class)
             metadataFile?.let { json.decodeFromStream<InstallMetadata>(it.inputStream()) }
@@ -234,7 +234,7 @@ class HomeModel(
 
     private suspend fun fetchRemoteData() {
         listOf(
-            // // These aren't needed by Shiggy
+            // // These aren't needed by Goon
             // screenModelScope.launch(Dispatchers.IO) {
             //     github.getBuildData().fold(
             //         success = { remoteDataJson = it },
@@ -258,15 +258,15 @@ class HomeModel(
                     success = {
                         val versionName = it.name
                         val truncatedVersion = versionName.split(".").take(3).joinToString(".")
-                        latestShiggyXposedVersion = SemVer.parse(truncatedVersion)
+                        latestGoonXposedVersion = SemVer.parse(truncatedVersion)
                     },
-                    fail = { Log.w(BuildConfig.TAG, "Failed to fetch latest ShiggyXposed version", it) },
+                    fail = { Log.w(BuildConfig.TAG, "Failed to fetch latest GoonXposed version", it) },
                 )
             },
 
             ).joinAll()
 
-        if (trackerIndexJson == null /* remoteDataJson == null || latestAliuhookVersion == null */ || latestShiggyXposedVersion == null) {
+        if (trackerIndexJson == null /* remoteDataJson == null || latestAliuhookVersion == null */ || latestGoonXposedVersion == null) {
             mainThread { application.showToast(R.string.home_network_fail) }
         }
     }
@@ -305,7 +305,7 @@ class HomeModel(
         return application.packageManager
             .getInstalledPackages(PackageManager.GET_META_DATA)
             .filter {
-                // Shiggy doesn't have "legacy installer" whatsoever
+                // Goon doesn't have "legacy installer" whatsoever
                 return@filter it.applicationInfo?.metaData?.containsKey("isShiggy") == true
 
                 // // Packages installed via the legacy Installer do not have the metadata marker
@@ -316,11 +316,11 @@ class HomeModel(
     }
 
     /**
-     * Checks whether the current Shiggy installation is up-to-date.
+     * Checks whether the current Goon installation is up-to-date.
      *
      * Currently mirrors the behavior of Bunny Manager by directly comparing against
-     * the latest available Discord and ShiggyXposed release. This is a temporary approach and will remain
-     * in place until Shiggy adds support for version pinning.
+     * the latest available Discord and GoonXposed release. This is a temporary approach and will remain
+     * in place until Goon adds support for version pinning.
      */
     private fun isInstallationUpToDate(pkg: PackageInfo): Boolean? {
         val trackerData = trackerIndexJson ?: return null
@@ -332,7 +332,7 @@ class HomeModel(
         // Try to parse install metadata. If none present, install was made via legacy installer.
         val apkPath = pkg.applicationInfo?.publicSourceDir ?: return false
         val installMetadata = try {
-            val metadataFile = ZipReader(apkPath).use { it.openEntry("shiggy.json")?.read() }
+            val metadataFile = ZipReader(apkPath).use { it.openEntry("goon.json")?.read() }
                 ?: return false
 
             @OptIn(ExperimentalSerializationApi::class)
@@ -349,6 +349,6 @@ class HomeModel(
             VersionPreference.Custom -> return true
         }
 
-        return latestByPref == versionCode && installMetadata.shiggyXposedVersion == latestShiggyXposedVersion
+        return latestByPref == versionCode && installMetadata.goonXposedVersion == latestGoonXposedVersion
     }
 }
