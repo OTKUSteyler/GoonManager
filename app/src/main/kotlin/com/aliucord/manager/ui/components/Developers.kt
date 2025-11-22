@@ -23,7 +23,7 @@ import dev.goon.manager.R
 
 @Composable
 fun ContributorCommitsItem(
-        user: Contributor,
+        user: Developer,
         modifier: Modifier = Modifier,
 ) {
     val uriHandler = LocalUriHandler.current
