@@ -159,8 +159,8 @@ class SettingsScreen : Screen, Parcelable {
                             painter = painterResource(
                                 when (preferences.installer) {
                                     InstallerSetting.PM -> R.drawable.ic_android
-                                    InstallerSetting.ROOT -> R.drawable.ic_code
-                                    InstallerSetting.Shizuku -> R.drawable.ic_tools
+                                    InstallerSetting.ROOT -> R.drawable.ic_hashtag
+                                    InstallerSetting.Shizuku -> R.drawable.ic_shizuku
                                 }
                             ),
                             contentDescription = null,

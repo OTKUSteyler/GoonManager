@@ -17,7 +17,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.unit.dp
 import coil3.compose.SubcomposeAsyncImage
-import com.aliucord.manager.network.models.Contributor
+import com.aliucord.manager.network.models.Developer
 import com.valentinilk.shimmer.shimmer
 import dev.goon.manager.R
 
