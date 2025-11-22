@@ -48,7 +48,7 @@ class AboutModel(
                 username = "maisymoe",
                 avatarUrl = "https://github.com/maisymoe.png",
                 commits = 0,
-                repositories = persistentListOf<com.aliucord.manager.network.models.Contributor.Repository>()
+                repositories = emptyList(),
             ),
             Developer(
                 username = "kmmiio99o",
