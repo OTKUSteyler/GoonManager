@@ -26,41 +26,41 @@ class AboutModel(
                 repositories = emptyList(),
                 role = "ShiggyCord - Creator"
             ),
-          Contributor(
+          Developer(
                 username = "jonatanktk",
                 avatarUrl = "https://github.com/jonatanktk.png",
                 commits = 0,
-                repositories = persistentListOf<com.aliucord.manager.network.models.Contributor.Repository>()
+                repositories = emptyList(),
             ),
-            Contributor(
+            Developer(
                 username = "OTKUSteyler",
                 avatarUrl = "https://github.com/OTKUSteyler.png",
                 commits = 0,
-                repositories = persistentListOf<com.aliucord.manager.network.models.Contributor.Repository>()
+                repositories = emptyList(),
             ),
-            Contributor(
+            Developer(
                 username = "rushiiMachine",
                 avatarUrl = "https://github.com/rushiiMachine.png",
                 commits = 0,
-                repositories = persistentListOf<com.aliucord.manager.network.models.Contributor.Repository>()
+                repositories = emptyList(),
             ),
-            Contributor(
+            Developer(
                 username = "maisymoe",
                 avatarUrl = "https://github.com/maisymoe.png",
                 commits = 0,
                 repositories = persistentListOf<com.aliucord.manager.network.models.Contributor.Repository>()
             ),
-            Contributor(
+            Developer(
                 username = "kmmiio99o",
                 avatarUrl = "https://github.com/kmmiio99o.png",
                 commits = 0,
-                repositories = persistentListOf<com.aliucord.manager.network.models.Contributor.Repository>()
+                repositories = emptyList(),
             ),
-            Contributor(
+           Developer(
                 username = "pylixonly",
                 avatarUrl = "https://github.com/pylixonly.png",
                 commits = 0,
-                repositories = persistentListOf<com.aliucord.manager.network.models.Contributor.Repository>()
+                repositories = emptyList(),
             )
         )
         
