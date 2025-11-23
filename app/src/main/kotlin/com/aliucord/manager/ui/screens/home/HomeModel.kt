@@ -349,6 +349,6 @@ class HomeModel(
             VersionPreference.Custom -> return true
         }
 
-        return latestByPref == versionCode && installMetadata.goonXposedVersion == latestGoonXposedVersion
+        return latestByPref == versionCode && installMetadata.GoonXposedVersion == latestGoonXposedVersion
     }
 }
