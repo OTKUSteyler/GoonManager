@@ -51,7 +51,7 @@ class HomeModel(
     private val refreshingLock = Mutex()
     private var remoteDataJson: BuildInfo? = null
     private var trackerIndexJson: RNATrackerIndex? = null
-    private var latestShiggyXposedVersion: SemVer? = null
+    private var latestGoonXposedVersion: SemVer? = null
     private var latestAliuhookVersion: SemVer? = null
 
     init {
@@ -178,7 +178,9 @@ class HomeModel(
                     InstallData(
                         name = name,
                         packageName = pkg.packageName,
-                        isUpToDate = try { isInstallationUpToDate(pkg) } catch (e: Exception) {
+                        isUpToDate = try {
+                            isInstallationUpToDate(pkg)
+                        } catch (e: Exception) {
                             Log.w(BuildConfig.TAG, "Failed to check up-to-date for ${pkg.packageName}", e)
                             false
                         },
@@ -349,6 +351,6 @@ class HomeModel(
             VersionPreference.Custom -> return true
         }
 
-        return latestByPref == versionCode && installMetadata.GoonXposedVersion == latestGoonXposedVersion
+        return latestByPref == versionCode && installMetadata.goonXposedVersion == latestGoonXposedVersion
     }
 }

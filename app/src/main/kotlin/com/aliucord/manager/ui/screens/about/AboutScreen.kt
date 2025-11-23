@@ -21,7 +21,7 @@ import androidx.compose.ui.unit.dp
 import cafe.adriel.voyager.core.screen.Screen
 import cafe.adriel.voyager.koin.koinScreenModel
 import com.aliucord.manager.ui.components.*
-import com.aliucord.manager.ui.screens.about.components.ContributorListItem
+import com.aliucord.manager.ui.screens.about.components.RegularContributorListItem
 import com.aliucord.manager.ui.util.paddings.*
 import dev.goon.manager.R
 import kotlinx.parcelize.IgnoredOnParcel
@@ -29,7 +29,8 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 class AboutScreen : Screen, Parcelable {
-    @IgnoredOnParcel override val key = "About"
+    @IgnoredOnParcel
+    override val key = "About"
 
     @Composable
     override fun Content() {
@@ -103,6 +104,7 @@ fun AboutScreenContent(state: State<AboutScreenState>) {
                         }
                     }
                 }
+
                 AboutScreenState.Failure -> {
                     item(key = "LOAD_FAILURE") {
                         Box(
@@ -115,12 +117,13 @@ fun AboutScreenContent(state: State<AboutScreenState>) {
                         }
                     }
                 }
+
                 is AboutScreenState.Loaded -> {
                     itemsIndexed(
                         items = currentState.contributors,
                         key = { index, developer -> developer.username }
                     ) { index, developer ->
-                        ContributorListItem(
+                        RegularContributorListItem(
                             contributor = developer,
                             isLast = index == currentState.contributors.lastIndex
                         )

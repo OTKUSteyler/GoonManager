@@ -6,6 +6,9 @@ import kotlinx.serialization.Serializable
 
 /**
  * Data stored inside patched APKs as ~~"aliucord.json"~~ "shiggy.json" in order to preserve install-time information about Aliucord and the Manager.
+ * Metadata about an Aliucord installation embedded in the APK.
+ * @param options The patch options used for this installation
+ * @param goonXposedVersion The version of GoonXposed used for this installation
  */
 @Serializable
 data class InstallMetadata(
@@ -47,5 +50,5 @@ data class InstallMetadata(
     /**
      * Version of ShiggyXposed embedded into the APK.
      */
-    val shiggyXposedVersion: SemVer?,
+    val goonXposedVersion: SemVer,
 )

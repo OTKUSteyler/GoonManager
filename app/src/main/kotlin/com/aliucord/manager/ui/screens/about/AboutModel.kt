@@ -20,50 +20,47 @@ class AboutModel(
 
         val allDevelopers = persistentListOf(
             Developer(
+                username = "OTKUSteyler",
+                avatarUrl = "https://github.com/OTKUSteyler.png",
+                commits = 0,
+                repositories = emptyList(),
+                role = "GoonCord - Creator"
+            ),
+            Developer(
                 username = "kmmiio99o",
                 avatarUrl = "https://github.com/kmmiio99o.png",
                 commits = 0,
                 repositories = emptyList(),
                 role = "ShiggyCord - Creator"
             ),
-          Developer(
-                username = "jonatanktk",
-                avatarUrl = "https://github.com/jonatanktk.png",
-                commits = 0,
-                repositories = emptyList(),
-            ),
-            Developer(
-                username = "OTKUSteyler",
-                avatarUrl = "https://github.com/OTKUSteyler.png",
-                commits = 0,
-                repositories = emptyList(),
-            ),
             Developer(
                 username = "rushiiMachine",
                 avatarUrl = "https://github.com/rushiiMachine.png",
                 commits = 0,
                 repositories = emptyList(),
+                role = "Manager - Creator"
             ),
             Developer(
                 username = "maisymoe",
                 avatarUrl = "https://github.com/maisymoe.png",
                 commits = 0,
                 repositories = emptyList(),
+                role = "Vendetta - Creator"
             ),
             Developer(
-                username = "kmmiio99o",
-                avatarUrl = "https://github.com/kmmiio99o.png",
-                commits = 0,
-                repositories = emptyList(),
-            ),
-           Developer(
                 username = "pylixonly",
                 avatarUrl = "https://github.com/pylixonly.png",
                 commits = 0,
                 repositories = emptyList(),
-            )
-        )
-        
+                role = "Bunny - Creator"
+            ),
+            Developer(
+                username = "jonatanktk",
+                avatarUrl = "https://github.com/jonatanktk.png",
+                commits = 0,
+                repositories = emptyList(),
+                role = "Random Person there"
+            ),
         )
 
         mutableState.value = AboutScreenState.Loaded(allDevelopers.toUnsafeImmutable())

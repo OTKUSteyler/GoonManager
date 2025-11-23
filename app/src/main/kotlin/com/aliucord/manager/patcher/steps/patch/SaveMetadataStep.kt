@@ -31,7 +31,7 @@ class SaveMetadataStep(private val options: PatchOptions) : Step(), KoinComponen
         val aliuhook = container.getStepOrNull<DownloadAliuhookStep>()
         val injector = container.getStepOrNull<DownloadInjectorStep>()
         val patches = container.getStepOrNull<DownloadPatchesStep>()
-        val shiggyXposed = container.getStepOrNull<DownloadShiggyXposedStep>()
+        val goonXposed = container.getStepOrNull<DownloadShiggyXposedStep>()
 
         val metadata = InstallMetadata(
             options = options,
@@ -41,12 +41,12 @@ class SaveMetadataStep(private val options: PatchOptions) : Step(), KoinComponen
             injectorVersion = injector?.targetVersion,
             patchesVersion = patches?.targetVersion,
             lspatchVersion = LSPConfig.instance.VERSION_CODE,
-            shiggyXposedVersion = shiggyXposed?.targetVersion,
+            goonXposedVersion = goonXposed?.targetVersion ?: SemVer.parse("0.0.0"), // Provide a default if null
         )
 
         container.log("Writing serialized install metadata to APK")
         ZipWriter(apk, /* append = */ true).use {
-            it.writeEntry("shiggy.json", json.encodeToString<InstallMetadata>(metadata))
+            it.writeEntry("goon.json", json.encodeToString<InstallMetadata>(metadata))
         }
     }
 }

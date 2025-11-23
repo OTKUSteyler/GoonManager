@@ -17,7 +17,7 @@ import com.aliucord.manager.network.models.Developer
 import com.valentinilk.shimmer.shimmer
 
 @Composable
-fun ContributorListItem(
+fun LeadContributorItem(
     contributor: Developer,
     isLast: Boolean = false,
     modifier: Modifier = Modifier
@@ -86,7 +86,7 @@ fun ContributorListItem(
         }
 
         if (!isLast) {
-            Divider(
+            HorizontalDivider(
                 color = MaterialTheme.colorScheme.outline.copy(alpha = 0.1f),
                 thickness = 1.dp,
                 modifier = Modifier.padding(start = 100.dp, end = 24.dp)
