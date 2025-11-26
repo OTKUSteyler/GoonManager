@@ -22,7 +22,7 @@ class DownloadShiggyXposedStep : DownloadStep() {
 
     override suspend fun execute(container: StepRunner) {
         val latestRelease = shiggyGithubService.getLatestXposedRelease().getOrThrow()
-        container.log("Latest ShiggyXposed release is ${latestRelease.name}")
+        container.log("Latest GoonXposed release is ${latestRelease.name}")
 
         targetVersion = SemVer.parse(latestRelease.name)
         targetUrl = latestRelease.assets.first { it.name == "app-release.apk" }.browserDownloadUrl
