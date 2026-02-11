@@ -5,127 +5,130 @@
     android:viewportWidth="256"
     android:viewportHeight="256">
 
-    <!-- Solid circular background (Shiggy yellow-ish) -->
-    <path
-        android:fillColor="#fcc680"
-        android:pathData="M128,128 m-128,0 a128,128 0 1,0 256,0 a128,128 0 1,0 -256,0" />
+    <!-- Gray circular background -->
+    <path 
+        android:fillColor="#E0E0E0" 
+        android:pathData="M256,128 A128,128 0 1,1 0,128 A128,128 0 1,1 256,128 Z" />
 
-    <!-- Main character group - centered and slightly scaled -->
-    <group
-        android:scaleX="0.95"
-        android:scaleY="0.95"
-        android:translateX="6"
-        android:translateY="6">
+    <!-- Character container -->
+    <group 
+        android:scaleX="0.85" 
+        android:scaleY="0.85" 
+        android:translateX="19.2" 
+        android:translateY="19.2">
 
-        <!-- Face base (oval, white) -->
+        <!-- Face base (white oval) -->
         <path
             android:fillColor="#FFFFFF"
-            android:pathData="M80,180 Q128,220 176,180 Q190,140 176,100 Q128,60 80,100 Q66,140 80,180 Z" />
+            android:pathData="M85,95 Q70,128 85,175 Q128,210 171,175 Q186,128 171,95 Q128,65 85,95 Z" />
 
-        <!-- Fox ears group -->
-        <group android:translateX="0" android:translateY="0">
-            <!-- Left ear -->
-            <path
-                android:fillColor="#000000"
-                android:pathData="M70,60 L50,20 L90,50 Z" />
-            <path
-                android:fillColor="#FFFFFF"
-                android:pathData="M70,50 L55,30 L80,45 Z" />
-            <!-- Right ear -->
-            <path
-                android:fillColor="#000000"
-                android:pathData="M186,60 L206,20 L166,50 Z" />
-            <path
-                android:fillColor="#FFFFFF"
-                android:pathData="M186,50 L201,30 L176,45 Z" />
-        </group>
-
-        <!-- Hair fringe -->
+        <!-- Fox ears -->
+        <!-- Left ear outer (gray) -->
         <path
-            android:fillColor="#000000"
-            android:pathData="M90,70 Q128,50 166,70 L170,90 Q128,70 86,90 Z" />
-
-        <!-- Eyes group -->
-        <group>
-            <!-- Left eye -->
-            <path
-                android:fillColor="#000000"
-                android:pathData="M90,110 Q110,100 130,110 Q120,120 100,118 Z" />
-            <!-- Right eye -->
-            <path
-                android:fillColor="#000000"
-                android:pathData="M126,110 Q146,100 166,110 Q156,120 136,118 Z" />
-            <!-- Highlights -->
-            <path
-                android:fillColor="#FFFFFF"
-                android:pathData="M105,108 Q108,106 112,108 Z" />
-            <path
-                android:fillColor="#FFFFFF"
-                android:pathData="M141,108 Q144,106 148,108 Z" />
-        </group>
-
-        <!-- Tears -->
+            android:fillColor="#A0A0A0"
+            android:pathData="M75,70 L60,25 L95,60 Z" />
+        <!-- Left ear inner (white) -->
         <path
-            android:strokeColor="#000000"
-            android:strokeWidth="4"
-            android:fillColor="#00000000"
-            android:pathData="M100,120 Q95,140 92,160" />
+            android:fillColor="#FFFFFF"
+            android:pathData="M75,62 L65,38 L87,58 Z" />
+        <!-- Right ear outer (gray) -->
         <path
-            android:strokeColor="#000000"
-            android:strokeWidth="4"
-            android:fillColor="#00000000"
-            android:pathData="M156,120 Q161,140 164,160" />
-
-        <!-- Blush cheeks -->
+            android:fillColor="#A0A0A0"
+            android:pathData="M181,70 L196,25 L161,60 Z" />
+        <!-- Right ear inner (white) -->
         <path
-            android:fillColor="#FF9999"
-            android:fillAlpha="0.6"
-            android:pathData="M85,130 m-20,0 a20,15 0 1,0 40,0 a20,15 0 1,0 -40,0" />
+            android:fillColor="#FFFFFF"
+            android:pathData="M181,62 L191,38 L169,58 Z" />
+
+        <!-- Hair/bangs (gray) -->
         <path
-            android:fillColor="#FF9999"
-            android:fillAlpha="0.6"
-            android:pathData="M151,130 m-20,0 a20,15 0 1,0 40,0 a20,15 0 1,0 -40,0" />
+            android:fillColor="#A0A0A0"
+            android:pathData="M85,75 Q128,55 171,75 L173,88 Q128,72 83,88 Z" />
+        <!-- Hair side locks -->
+        <path
+            android:fillColor="#A0A0A0"
+            android:pathData="M65,90 Q60,120 65,150 L75,148 Q72,120 75,95 Z M191,90 Q196,120 191,150 L181,148 Q184,120 181,95 Z" />
 
-        <!-- Mouth + tongue group -->
-        <group android:translateY="2">
-            <!-- Mouth -->
-            <path
-                android:fillColor="#000000"
-                android:pathData="M100,140 Q128,170 156,140 L160,150 Q128,180 96,150 Z" />
-            <!-- Tongue -->
-            <path
-                android:fillColor="#FF69B4"
-                android:pathData="M110,145 Q128,165 146,145 Q140,170 128,175 Q116,170 110,145 Z" />
-            <!-- Tongue highlight -->
-            <path
-                android:fillColor="#FFFFFF"
-                android:pathData="M125,155 Q128,160 131,155 Z" />
-        </group>
-
-        <!-- Drool lines -->
+        <!-- Closed happy eyes -->
+        <!-- Left eye (curved line) -->
         <path
             android:strokeColor="#000000"
             android:strokeWidth="5"
+            android:strokeLineCap="round"
             android:fillColor="#00000000"
-            android:pathData="M110,150 Q100,180 95,200" />
+            android:pathData="M92,108 Q108,102 124,108" />
+        <!-- Right eye (curved line) -->
         <path
             android:strokeColor="#000000"
             android:strokeWidth="5"
+            android:strokeLineCap="round"
             android:fillColor="#00000000"
-            android:pathData="M146,150 Q156,180 161,200" />
+            android:pathData="M132,108 Q148,102 164,108" />
+
+        <!-- Eyebrow/crease marks above eyes -->
         <path
             android:strokeColor="#000000"
-            android:strokeWidth="6"
+            android:strokeWidth="3"
+            android:strokeLineCap="round"
             android:fillColor="#00000000"
-            android:pathData="M128,175 Q128,195 128,210" />
+            android:pathData="M88,98 Q104,94 120,98 M136,98 Q152,94 168,98" />
 
-        <!-- Collar / choker -->
+        <!-- Tears/drool streams -->
+        <path
+            android:strokeColor="#000000"
+            android:strokeWidth="4"
+            android:strokeLineCap="round"
+            android:fillColor="#00000000"
+            android:pathData="M95,112 Q90,135 88,158 M161,112 Q166,135 168,158" />
+
+        <!-- Blush marks (pink ovals) -->
+        <path
+            android:fillColor="#FFB3B3"
+            android:fillAlpha="0.7"
+            android:pathData="M70,125 A22,16 0,1,0 114,125 A22,16 0,1,0 70,125 Z M142,125 A22,16 0,1,0 186,125 A22,16 0,1,0 142,125 Z" />
+
+        <!-- Wide open mouth -->
         <path
             android:fillColor="#000000"
-            android:pathData="M90,185 Q128,195 166,185 L170,200 Q128,205 86,200 Z" />
+            android:pathData="M98,138 Q128,175 158,138 L162,148 Q128,188 94,148 Z" />
+
+        <!-- Tongue (pink) -->
         <path
-            android:fillColor="#FF69B4"
+            android:fillColor="#FF85A8"
+            android:pathData="M108,145 Q128,170 148,145 Q143,178 128,184 Q113,178 108,145 Z" />
+        <!-- Tongue highlight -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M123,158 Q128,165 133,158 Z" />
+
+        <!-- Drool lines from mouth -->
+        <path
+            android:strokeColor="#000000"
+            android:strokeWidth="5"
+            android:strokeLineCap="round"
+            android:fillColor="#00000000"
+            android:pathData="M108,152 Q98,178 94,200 M148,152 Q158,178 162,200 M128,184 L128,215" />
+
+        <!-- Small drool drops -->
+        <path
+            android:fillColor="#000000"
+            android:pathData="M93,202 A3,4 0,1,0 99,202 A3,4 0,1,0 93,202 Z M161,202 A3,4 0,1,0 167,202 A3,4 0,1,0 161,202 Z M126,217 A3,4 0,1,0 132,217 A3,4 0,1,0 126,217 Z" />
+
+        <!-- Collar/choker (black band) -->
+        <path
+            android:fillColor="#000000"
+            android:pathData="M88,185 Q128,195 168,185 L171,198 Q128,203 85,198 Z" />
+        <!-- Collar tag (pink heart/triangle) -->
+        <path
+            android:fillColor="#FF85A8"
             android:pathData="M120,190 L136,190 L128,200 Z" />
+
+        <!-- Sound effect lines (manga style) -->
+        <path
+            android:strokeColor="#000000"
+            android:strokeWidth="2"
+            android:fillColor="#00000000"
+            android:pathData="M45,100 L55,95 M48,115 L58,110 M50,130 L60,125 M200,100 L210,95 M198,115 L208,110 M196,130 L206,125" />
 
     </group>
 
