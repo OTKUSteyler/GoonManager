@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="24dp"
-    android:height="24dp"
-    android:viewportWidth="256"
-    android:viewportHeight="256">
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
 
-    <!-- Gray circular background -->
+    <!-- Background (gray) -->
     <path 
-        android:fillColor="#E0E0E0" 
-        android:pathData="M256,128 A128,128 0 1,1 0,128 A128,128 0 1,1 256,128 Z" />
+        android:fillColor="#E0E0E0"
+        android:pathData="M0,0 L108,0 L108,108 L0,108 Z" />
 
-    <!-- Character container -->
+    <!-- Safe zone circle (optional guide - remove in production) -->
+    <!-- <path 
+        android:fillColor="#00000000"
+        android:strokeColor="#FF0000"
+        android:strokeWidth="1"
+        android:pathData="M54,54 m-42,0 a42,42 0 1,0 84,0 a42,42 0 1,0 -84,0" /> -->
+
+    <!-- Character container (scaled to fit safe zone) -->
     <group 
-        android:scaleX="0.85" 
-        android:scaleY="0.85" 
-        android:translateX="19.2" 
-        android:translateY="19.2">
+        android:scaleX="0.32" 
+        android:scaleY="0.32" 
+        android:translateX="8" 
+        android:translateY="8">
 
         <!-- Face base (white oval) -->
         <path
@@ -50,22 +57,14 @@
             android:pathData="M65,90 Q60,120 65,150 L75,148 Q72,120 75,95 Z M191,90 Q196,120 191,150 L181,148 Q184,120 181,95 Z" />
 
         <!-- Closed happy eyes -->
-        <!-- Left eye (curved line) -->
         <path
             android:strokeColor="#000000"
             android:strokeWidth="5"
             android:strokeLineCap="round"
             android:fillColor="#00000000"
-            android:pathData="M92,108 Q108,102 124,108" />
-        <!-- Right eye (curved line) -->
-        <path
-            android:strokeColor="#000000"
-            android:strokeWidth="5"
-            android:strokeLineCap="round"
-            android:fillColor="#00000000"
-            android:pathData="M132,108 Q148,102 164,108" />
+            android:pathData="M92,108 Q108,102 124,108 M132,108 Q148,102 164,108" />
 
-        <!-- Eyebrow/crease marks above eyes -->
+        <!-- Eyebrow marks -->
         <path
             android:strokeColor="#000000"
             android:strokeWidth="3"
@@ -73,7 +72,7 @@
             android:fillColor="#00000000"
             android:pathData="M88,98 Q104,94 120,98 M136,98 Q152,94 168,98" />
 
-        <!-- Tears/drool streams -->
+        <!-- Tears -->
         <path
             android:strokeColor="#000000"
             android:strokeWidth="4"
@@ -81,27 +80,26 @@
             android:fillColor="#00000000"
             android:pathData="M95,112 Q90,135 88,158 M161,112 Q166,135 168,158" />
 
-        <!-- Blush marks (pink ovals) -->
+        <!-- Blush marks -->
         <path
             android:fillColor="#FFB3B3"
             android:fillAlpha="0.7"
             android:pathData="M70,125 A22,16 0,1,0 114,125 A22,16 0,1,0 70,125 Z M142,125 A22,16 0,1,0 186,125 A22,16 0,1,0 142,125 Z" />
 
-        <!-- Wide open mouth -->
+        <!-- Mouth -->
         <path
             android:fillColor="#000000"
             android:pathData="M98,138 Q128,175 158,138 L162,148 Q128,188 94,148 Z" />
 
-        <!-- Tongue (pink) -->
+        <!-- Tongue -->
         <path
             android:fillColor="#FF85A8"
             android:pathData="M108,145 Q128,170 148,145 Q143,178 128,184 Q113,178 108,145 Z" />
-        <!-- Tongue highlight -->
         <path
             android:fillColor="#FFFFFF"
             android:pathData="M123,158 Q128,165 133,158 Z" />
 
-        <!-- Drool lines from mouth -->
+        <!-- Drool lines -->
         <path
             android:strokeColor="#000000"
             android:strokeWidth="5"
@@ -109,21 +107,20 @@
             android:fillColor="#00000000"
             android:pathData="M108,152 Q98,178 94,200 M148,152 Q158,178 162,200 M128,184 L128,215" />
 
-        <!-- Small drool drops -->
+        <!-- Drool drops -->
         <path
             android:fillColor="#000000"
             android:pathData="M93,202 A3,4 0,1,0 99,202 A3,4 0,1,0 93,202 Z M161,202 A3,4 0,1,0 167,202 A3,4 0,1,0 161,202 Z M126,217 A3,4 0,1,0 132,217 A3,4 0,1,0 126,217 Z" />
 
-        <!-- Collar/choker (black band) -->
+        <!-- Collar -->
         <path
             android:fillColor="#000000"
             android:pathData="M88,185 Q128,195 168,185 L171,198 Q128,203 85,198 Z" />
-        <!-- Collar tag (pink heart/triangle) -->
         <path
             android:fillColor="#FF85A8"
             android:pathData="M120,190 L136,190 L128,200 Z" />
 
-        <!-- Sound effect lines (manga style) -->
+        <!-- Manga effect lines -->
         <path
             android:strokeColor="#000000"
             android:strokeWidth="2"
