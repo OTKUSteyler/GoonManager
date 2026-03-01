@@ -6,5 +6,5 @@
   android:viewportHeight="108"
 >
   <!-- Flat background color for launcher adaptive icon -->
-  <path android:pathData="M0,0H108V108H0Z" android:fillColor="#FFFFCB82" />
+  <path android:pathData="M0,0H108V108H0Z" android:fillColor="#070700" />
 </vector>
