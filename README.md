@@ -127,4 +127,5 @@ Goon Manager is open source under the OSL License. See `LICENSE` for details.
 <p align="center">
   <strong>Made with ❤️ for the GoonCord community — keep it playful, keep it safe.</strong>
 </p>
+
 ![OTKUSteyler](https://count.getloli.com/@OTKUSteyler?name=OTKUSteyler&theme=miku&padding=7&offset=0&align=top&scale=1&pixelated=1&darkmode=1)
