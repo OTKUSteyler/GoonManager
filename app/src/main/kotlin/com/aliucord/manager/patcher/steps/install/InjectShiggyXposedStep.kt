@@ -15,9 +15,9 @@ import org.lsposed.patch.util.Logger
 import java.io.File
 import java.util.*
 
-class InjectShiggyXposedStep : Step() {
+class InjectGoonXposedStep : Step() {
     override val group: StepGroup = StepGroup.Install
-    override val localizedName: Int = R.string.patch_step_inject_shiggy
+    override val localizedName: Int = R.string.patch_step_inject_goon
 
     suspend fun patch(
         container: StepRunner,
