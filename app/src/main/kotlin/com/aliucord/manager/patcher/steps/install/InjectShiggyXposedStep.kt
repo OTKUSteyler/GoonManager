@@ -15,9 +15,9 @@ import org.lsposed.patch.util.Logger
 import java.io.File
 import java.util.*
 
-class InjectGoonXposedStep : Step() {
+class InjectShiggyXposedStep : Step() {
     override val group: StepGroup = StepGroup.Install
-    override val localizedName: Int = R.string.patch_step_inject_goon
+    override val localizedName: Int = R.string.patch_step_inject_shiggy
 
     suspend fun patch(
         container: StepRunner,
@@ -92,14 +92,25 @@ class InjectGoonXposedStep : Step() {
                 baseName,
                 LSPConfig.instance.VERSION_CODE
             )
-            val patchedApk = File(tempDir, patchedApkName)
+            var patchedApk = File(tempDir, patchedApkName)
+
+            if (!patchedApk.exists()) {
+                val found = tempDir.listFiles()?.firstOrNull {
+                    it.extension.equals("apk", ignoreCase = true) && (it.name.contains(baseName) || it.name.contains("lspatched"))
+                } ?: tempDir.listFiles()?.firstOrNull { it.extension.equals("apk", ignoreCase = true) }
+                if (found != null) {
+                    patchedApk = found
+                }
+            }
 
             if (patchedApk.exists()) {
                 patchedApk.copyTo(originalApk, overwrite = true)
                 container.log("Replaced ${originalApk.name} with ${patchedApk.name}")
             } else {
-                container.log("Warning: Could not find patched APK for ${originalApk.name}")
-                container.log("Expected patched APK at: ${patchedApk.absolutePath}")
+                val availableFiles = tempDir.listFiles()?.map { it.name }?.joinToString(", ") ?: "none"
+                val errorMsg = "Could not find patched APK for ${originalApk.name} in ${tempDir.absolutePath} (Found files: $availableFiles)"
+                container.log("Error: $errorMsg")
+                throw IllegalStateException(errorMsg)
             }
         }
 
